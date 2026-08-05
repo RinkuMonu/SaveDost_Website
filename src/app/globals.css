@@ -1,0 +1,745 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Allerta+Stencil&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Allerta+Stencil&family=Amiri+Quran&display=swap");
+@import "tailwindcss";
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+/*
+ * Critical first-paint shell for the homepage hero.
+ * Its complete styles are emitted by the hero component. Keeping it hidden
+ * until that stylesheet is parsed prevents raw headings and links flashing.
+ */
+.preview-hero {
+  min-height: 100svh;
+  overflow: hidden;
+  background: linear-gradient(135deg, #fbfefe 0%, #f2fafb 52%, #e7f7fa 100%);
+}
+
+/* body{
+  user-select: none;
+} */
+body {
+  overflow-x: hidden !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+/* Hide the page scrollbar without disabling scrolling. */
+html,
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.font-aboreto {
+  font-family: "Aboreto", cursive;
+}
+
+.font-Amiri {
+  font-family: "Aboreto", cursive;
+}
+
+.agbalumo-regular {
+  font-family: "Agbalumo", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.allerta-stencil-regular {
+  font-family: "Allerta Stencil", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.amiri-quran-regular {
+  font-family: "Amiri Quran", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button {
+  cursor: pointer !important;
+}
+
+@keyframes header-navigation-progress {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(300%);
+  }
+}
+
+.header-navigation-progress {
+  animation: header-navigation-progress 0.85s ease-in-out infinite;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header-navigation-progress {
+    animation: none;
+    width: 100%;
+  }
+}
+
+.slick-slide,
+.slick-slide * {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Position dots at the top */
+.slick-dots {
+  top: 15px;
+  bottom: auto !important;
+  display: flex !important;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Each dot becomes a bar */
+.slick-dots li {
+  width: 50px !important;
+  /* bar width */
+  height: 4px !important;
+  /* bar thickness */
+  background: #24576c1a;
+  border-radius: 2px;
+  transition: background 0.3s ease;
+}
+
+/* Active bar */
+.slick-dots li.slick-active {
+  background: #24576c;
+}
+
+/* Hide default circle completely */
+.slick-dots li button {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.slick-dots li button:before {
+  content: none !important;
+  /* fully remove pseudo circle */
+}
+
+.body {
+  overflow-x: hidden !important;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes compliance-marquee-scroll {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(calc(-50% - 0.75rem), 0, 0);
+  }
+}
+
+.compliance-marquee-track {
+  animation: compliance-marquee-scroll 28s linear infinite;
+  will-change: transform;
+}
+
+.compliance-marquee:hover .compliance-marquee-track,
+.compliance-marquee:focus-within .compliance-marquee-track {
+  animation-play-state: paused;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* Slim themed scrollbar for the More services dropdown. */
+.more-services-scrollbar {
+  scrollbar-color: #1687a4 #e7f4f7;
+  scrollbar-width: thin;
+}
+
+.more-services-scrollbar::-webkit-scrollbar {
+  width: 7px;
+}
+
+.more-services-scrollbar::-webkit-scrollbar-track {
+  margin-block: 8px;
+  border-radius: 999px;
+  background: #e7f4f7;
+}
+
+.more-services-scrollbar::-webkit-scrollbar-thumb {
+  border: 1px solid #e7f4f7;
+  border-radius: 999px;
+  background: #1687a4;
+}
+
+.more-services-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #0c6176;
+}
+
+.more-services-scrollbar::-webkit-scrollbar-button,
+.more-services-scrollbar::-webkit-scrollbar-button:single-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.more-services-scrollbar::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Privacy policy contents navigation scrollbar. */
+.privacy-contents-scrollbar {
+  scrollbar-color: #1687a4 #e8f4f6;
+  scrollbar-width: thin;
+}
+
+.privacy-contents-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.privacy-contents-scrollbar::-webkit-scrollbar-track {
+  margin-block: 12px;
+  border-radius: 999px;
+  background: #e8f4f6;
+}
+
+.privacy-contents-scrollbar::-webkit-scrollbar-thumb {
+  border: 2px solid #e8f4f6;
+  border-radius: 999px;
+  background: #1687a4;
+}
+
+.privacy-contents-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #0c6176;
+}
+
+.privacy-contents-scrollbar::-webkit-scrollbar-button {
+  display: none;
+}
+
+.chargeback-contents-scrollbar {
+  scrollbar-color: #1687a4 #e8f4f6;
+  scrollbar-width: thin;
+}
+
+.chargeback-contents-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chargeback-contents-scrollbar::-webkit-scrollbar-track {
+  margin-block: 12px;
+  border-radius: 999px;
+  background: #e8f4f6;
+}
+
+.chargeback-contents-scrollbar::-webkit-scrollbar-thumb {
+  border: 2px solid #e8f4f6;
+  border-radius: 999px;
+  background: #1687a4;
+}
+
+.chargeback-policy-content ul {
+  display: grid;
+  gap: 0.6rem;
+  margin-top: 0.75rem;
+  list-style-position: outside;
+  padding-left: 1.25rem;
+}
+
+.chargeback-policy-content li::marker {
+  color: #00a8e8;
+}
+
+.refund-contents-scrollbar {
+  scrollbar-color: #1687a4 #e8f4f6;
+  scrollbar-width: thin;
+}
+
+.refund-contents-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.refund-contents-scrollbar::-webkit-scrollbar-track {
+  margin-block: 12px;
+  border-radius: 999px;
+  background: #e8f4f6;
+}
+
+.refund-contents-scrollbar::-webkit-scrollbar-thumb {
+  border: 2px solid #e8f4f6;
+  border-radius: 999px;
+  background: #1687a4;
+}
+
+.terms-contents-scrollbar {
+  scrollbar-color: #1687a4 #e8f4f6;
+  scrollbar-width: thin;
+}
+
+.terms-contents-scrollbar::-webkit-scrollbar {
+  display: block;
+  width: 10px;
+}
+
+.terms-contents-scrollbar::-webkit-scrollbar-track {
+  margin-block: 10px;
+  border-radius: 999px;
+  background: #edf7f8;
+  box-shadow: inset 0 0 0 1px #d8ecef;
+}
+
+.terms-contents-scrollbar::-webkit-scrollbar-thumb {
+  min-height: 48px;
+  border: 2px solid #edf7f8;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #20a4bd 0%, #0c6176 100%);
+}
+
+.terms-contents-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #07566b;
+}
+
+.terms-contents-scrollbar::-webkit-scrollbar-button,
+.terms-contents-scrollbar::-webkit-scrollbar-corner {
+  display: none;
+}
+
+.kyc-contents-scrollbar {
+  scrollbar-color: #1687a4 #edf7f8;
+  scrollbar-width: thin;
+}
+
+.kyc-contents-scrollbar::-webkit-scrollbar {
+  display: block;
+  width: 10px;
+}
+
+.kyc-contents-scrollbar::-webkit-scrollbar-track {
+  margin-block: 10px;
+  border-radius: 999px;
+  background: #edf7f8;
+  box-shadow: inset 0 0 0 1px #d8ecef;
+}
+
+.kyc-contents-scrollbar::-webkit-scrollbar-thumb {
+  min-height: 48px;
+  border: 2px solid #edf7f8;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #20a4bd 0%, #0c6176 100%);
+}
+
+.kyc-contents-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #07566b;
+}
+
+.kyc-contents-scrollbar::-webkit-scrollbar-button,
+.kyc-contents-scrollbar::-webkit-scrollbar-corner {
+  display: none;
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow: 0 0 25px 8px rgba(0, 169, 231, 0.4);
+  }
+
+  50% {
+    box-shadow: 0 0 30px 8px rgba(0, 169, 231, 0.6);
+  }
+}
+
+.animate-glow {
+  animation: glow 2.5s infinite ease-in-out;
+  border-radius: 9999px;
+  /* keep circle glow */
+}
+
+.shape {
+  --r: 20px;
+  /* radius */
+  --s: 40px;
+  /* inner curve size */
+  border-radius: var(--r);
+  display: inline-block;
+  margin: 10px;
+  background: white;
+  z-index: 1;
+  overflow: visible;
+  clip-path: shape(
+    from 0 0,
+    hline to calc(100% - var(--s) - 2 * var(--r)),
+    arc by var(--r) var(--r) of var(--r) cw,
+    arc by var(--s) var(--s) of var(--s),
+    arc by var(--r) var(--r) of var(--r) cw,
+    vline to 100%,
+    hline to 0
+  );
+}
+
+.shape-bottom-right {
+  --r: 20px;
+  /* radius */
+  --s: 40px;
+  border-radius: var(--r);
+  display: inline-block;
+  margin: 10px;
+  background: white;
+  z-index: 1;
+  overflow: visible;
+  clip-path: shape(
+    from 0 0,
+    hline to calc(100% - var(--s) - 2 * var(--r)),
+    arc by var(--r) var(--r) of var(--r) cw,
+    arc by var(--s) var(--s) of var(--s),
+    arc by var(--r) var(--r) of var(--r) cw,
+    vline to 100%,
+    hline to 0
+  );
+}
+
+.shape1 {
+  --r: 20px;
+  --s: 40px;
+  clip-path: shape(
+    from 0 0,
+    vline to calc(100% - var(--s) - 2 * var(--r)),
+    arc by var(--r) var(--r) of var(--r),
+    arc by var(--s) var(--s) of var(--s) cw,
+    arc by var(--r) var(--r) of var(--r),
+    arc by var(--r) var(--r) of var(--r) cw,
+    hline to 100%,
+    vline to 0
+  );
+}
+
+.lastSvg:last-child .svg1 svg {
+  display: none;
+}
+
+.plane {
+  position: absolute;
+  top: 10%;
+  width: 80px;
+  height: 80px;
+  offset-path: path("M 0 100 C 300 -150, 300 250, 450 200 S 600 -150, 750 100");
+  offset-rotate: auto;
+  animation: fly 8s linear infinite;
+}
+
+.planeimg {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+@keyframes fly {
+  from {
+    offset-distance: 0%;
+  }
+
+  to {
+    offset-distance: 100%;
+  }
+}
+
+@keyframes light {
+  0% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse-slow {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+
+  50% {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 6s ease-in-out infinite;
+}
+
+@keyframes bounce-slow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 8s ease-in-out infinite;
+}
+
+/* Hide number input arrows (Chrome, Safari, Edge, Opera) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide number input arrows (Firefox) */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@keyframes booking-hero-flight {
+  from {
+    offset-distance: 0%;
+  }
+  to {
+    offset-distance: 100%;
+  }
+}
+
+.booking-hero-plane {
+  offset-path: ellipse(55% 38% at 50% 50%);
+  offset-rotate: auto;
+  animation: booking-hero-flight 7s linear infinite;
+  transform-origin: center;
+  will-change: offset-distance;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .booking-hero-plane {
+    animation: none;
+    offset-distance: 38%;
+  }
+}
+
+.pan-hero-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #0c3d4c;
+  border-radius: 9999px;
+  background: #0c3d4c;
+  padding: 0.75rem 2rem;
+  color: #fff;
+  font-weight: 600;
+  transition:
+    background-color 300ms ease,
+    color 300ms ease,
+    transform 300ms ease;
+}
+
+.pan-hero-button:hover {
+  background: #fff;
+  color: #0d2f4d;
+}
+
+.pan-hero-button:focus-visible {
+  outline: 2px solid #0289ad;
+  outline-offset: 4px;
+}
+
+/* Themed scrollbar used only inside the homepage All Products overlay. */
+.finunique-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #0289ad transparent;
+}
+
+.finunique-scrollbar::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+.finunique-scrollbar::-webkit-scrollbar-track {
+  border-radius: 999px;
+  background: transparent;
+}
+
+.finunique-scrollbar::-webkit-scrollbar-thumb {
+  min-height: 42px;
+  border: 2px solid white;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #00a8e8, #026381);
+}
+
+.finunique-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #0c3d4c;
+}
+
+/* Finunique-themed scrollbar for the account profile drawer. */
+.profile-drawer-scrollbar {
+  scrollbar-color: #0289ad #edf7f8;
+  scrollbar-width: thin;
+}
+
+.profile-drawer-scrollbar::-webkit-scrollbar {
+  display: block;
+  width: 8px;
+}
+
+.profile-drawer-scrollbar::-webkit-scrollbar-track {
+  margin-block: 10px;
+  border-radius: 999px;
+  background: #edf7f8;
+}
+
+.profile-drawer-scrollbar::-webkit-scrollbar-thumb {
+  min-height: 48px;
+  border: 2px solid #edf7f8;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #00a8e8 0%, #026381 100%);
+}
+
+.profile-drawer-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #0c3d4c;
+}
+
+.profile-drawer-scrollbar::-webkit-scrollbar-button,
+.profile-drawer-scrollbar::-webkit-scrollbar-corner {
+  display: none;
+  width: 0;
+  height: 0;
+  background: transparent;
+}
+
+/* Site-wide section reveals without client-side DOM mutations. */
+@keyframes site-section-reveal {
+  from {
+    translate: 0 16px;
+  }
+
+  to {
+    translate: 0 0;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    [data-page-content] section {
+      animation-name: site-section-reveal;
+      animation-duration: 1ms;
+      animation-fill-mode: both;
+      animation-timing-function: linear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 14%;
+    }
+  }
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes counter-orbit {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-orbit {
+  animation: orbit 30s linear infinite;
+}
+
+.animate-counter {
+  animation: counter-orbit 30s linear infinite;
+}
+
+.animate-orbit,
+.animate-counter {
+  animation-duration: 30s;
+}
+
+@media (min-width: 1024px) {
+  img[alt="aeps"] {
+    width: 450px;
+    left: 15px;
+    bottom: 0px;
+  }
+
+  img[alt="DMT"] {
+    width: 400px;
+    position: absolute;
+    left: 40%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+  }
+
+  img[alt="MATM"] {
+    left: 60px !important;
+    top: -16px;
+    width: 330px;
+  }
+
+  img[alt="Insurance"] {
+    width: 450px;
+    bottom: 0 !important;
+  }
+
+  img[alt="booking"] {
+    width: 425px;
+    bottom: 0 !important;
+    left: 35px;
+  }
+
+  img[alt="credit"] {
+    bottom: 0 !important;
+    left: 40px;
+  }
+}
