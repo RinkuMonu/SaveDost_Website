@@ -120,12 +120,12 @@ export default function Reprintguideline() {
               {" "}
               Website:{" "}
               <Link
-                href="https://savedost.in"
+                href="https://savedost.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:underline"
               >
-                www.savedost.in
+                www.savedost.com
               </Link>
             </li>
           </ul>
@@ -153,12 +153,12 @@ export default function Reprintguideline() {
             <li>
               Website:
               <Link
-                href="https://savedost.in"
+                href="https://savedost.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:underline"
               >
-                www.savedost.in
+                www.savedost.com
               </Link>
             </li>
           </ul>
@@ -179,3 +179,4 @@ export default function Reprintguideline() {
     </>
   );
 }
+

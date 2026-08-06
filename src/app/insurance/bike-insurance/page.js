@@ -140,7 +140,7 @@ export default function page() {
       {
         number: "1",
         icon: FileText,
-        title: "Enter Vechile Details",
+        title: "Enter Vehicle Details",
         description:
           "Provide your Vehicle registration number and basic information in our simple, user-friendly form.",
       },

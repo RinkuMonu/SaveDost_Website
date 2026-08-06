@@ -161,7 +161,7 @@ function Contact() {
               query and our support team will help you.
             </p>
             <div className="mt-7 flex flex-wrap justify-center gap-3 lg:justify-start">
-              <a href="mailto:support@savedost.in" className="pan-hero-button gap-2">
+              <a href="mailto:support@savedost.com" className="pan-hero-button gap-2">
                 <MdOutlineMail className="text-lg" /> Email Us
               </a>
             </div>
@@ -316,17 +316,17 @@ function Contact() {
                 <div>
                   <p className="font-bold">Email</p>
                   <p className="mt-1 text-sm text-slate-600">
-                    <a href="mailto:support@savedost.in" className="hover:underline">
-                      support@savedost.in
+                    <a href="mailto:support@savedost.com" className="hover:underline">
+                      support@savedost.com
                     </a>
                   </p>
 
                   {/* <p className="text-gray-500 text-sm">
                     <a
-                      href="mailto:support@savedost.in"
+                      href="mailto:support@savedost.com"
                       className="hover:underline"
                     >
-                      support@savedost.in
+                      support@savedost.com
                     </a>
                   </p> */}
                 </div>
@@ -352,7 +352,7 @@ function Contact() {
                 <div>
                   <p className="font-bold">Email support</p>
                   <p className="mt-1 text-sm leading-5 text-slate-600">
-                    For assistance, write to support@savedost.in.
+                    For assistance, write to support@savedost.com.
                   </p>
                   {/* <p className="text-gray-500 text-sm">
                     <span className="font-bold">Corporate Office:</span>Office

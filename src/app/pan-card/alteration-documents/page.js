@@ -338,7 +338,7 @@ export default function Page() {
     {
       icon: <ClipboardList size={20} />,
       title: "Submission & Support",
-      content: <p>Contact support@savedost.in for current submission instructions.</p>,
+      content: <p>Contact support@savedost.com for current submission instructions.</p>,
     },
   ];
 
@@ -350,3 +350,4 @@ export default function Page() {
     />
   );
 }
+

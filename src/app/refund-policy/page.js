@@ -34,7 +34,7 @@ const sections = [
     id: "request",
     title: "How to Request a Refund",
     paragraphs: [
-      "Email support@savedost.in and provide the registered mobile number, transaction ID, date, amount, service type, and a clear explanation of the issue. Additional proof may be requested when needed for verification.",
+      "Email support@savedost.com and provide the registered mobile number, transaction ID, date, amount, service type, and a clear explanation of the issue. Additional proof may be requested when needed for verification.",
     ],
   },
   {
@@ -86,3 +86,4 @@ export default function RefundPolicyPage() {
     />
   );
 }
+

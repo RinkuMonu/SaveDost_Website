@@ -79,7 +79,7 @@ const sections = [
     id: "support",
     title: "KYC Support",
     paragraphs: [
-      "For help, email support@savedost.in. Never send OTPs, passwords, or payment PINs to anyone.",
+      "For help, email support@savedost.com. Never send OTPs, passwords, or payment PINs to anyone.",
     ],
   },
 ];
@@ -96,3 +96,4 @@ export default function KycPolicyPage() {
     />
   );
 }
+

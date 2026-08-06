@@ -74,8 +74,8 @@ export default function Reprintguideline() {
           <ul className="list-disc list-inside text-gray-700 leading-relaxed space-y-2 marker:text-[#0077b6]">
             <li>
               E-mail:{" "}
-              <a href="mailto:support@savedost.in" className="text-blue-600 hover:underline">
-                support@savedost.in
+              <a href="mailto:support@savedost.com" className="text-blue-600 hover:underline">
+                support@savedost.com
               </a>
             </li>
             <li>
@@ -102,3 +102,4 @@ export default function Reprintguideline() {
     </>
   );
 }
+

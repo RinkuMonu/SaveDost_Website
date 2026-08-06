@@ -82,11 +82,13 @@ export default function dosforeign() {
       title: "For Assistance",
       desc: [
         "Finunique Small Private Limited",
-        "Email: support@savedost.in",
-        "Website: www.savedost.in",
+        "Email: support@savedost.com",
+        "Website: www.savedost.com",
       ],
     },
   ];
 
   return <Dos items={dosList} />;
 }
+
+

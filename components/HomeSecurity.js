@@ -52,7 +52,7 @@ function HomeSecurity() {
             src="/banner/homesecurity3d.png"
             width={400}
             height={400}
-            alt="homesecutity"
+            alt="Home security"
             className="object-contain w-full h-full"
           />
         </div>

@@ -37,7 +37,7 @@ export default function PreFooterSection() {
         { name: "Book Cylinder", href: "/recharge#lpg" },
         { name: "Landline", href: "/recharge#landline" },
         { name: "Broadband", href: "/recharge#broadband" },
-        { name: "Eletricity", href: "/recharge#electricity" },
+        { name: "Electricity", href: "/recharge#electricity" },
       ],
     },
     {

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Gauge, Mail, ShieldCheck } from "lucide-react";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaXTwitter, FaYoutube } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram, FaXTwitter, FaYoutube } from "react-icons/fa6";
 
 const quickLinks = [
   ["Home", "/"],
@@ -78,31 +78,27 @@ const legalLinks = [
 const socialLinks = [
   [
     FaFacebookF,
-    "https://www.facebook.com/people/Finunique-small-private-limited/61584013341134",
+    "https://www.facebook.com/share/19EmpVPPdL/",
     "Facebook",
     "bg-[#1877f2]",
   ],
-  [FaYoutube, "https://www.youtube.com/@finuniques", "YouTube", "bg-[#ff0000]"],
+  [FaYoutube, "https://www.youtube.com/@Save_Dost", "YouTube", "bg-[#ff0000]"],
   [
     FaInstagram,
-    "https://www.instagram.com/finunques?igsh=dDV3eXM0dHl6eWgx",
+    "https://www.instagram.com/savedost_?igsh=MTVmYWRmZWFxOG03eQ==",
     "Instagram",
     "bg-gradient-to-br from-[#feda75] via-[#d62976] to-[#4f5bd5]",
   ],
-  [
-    FaLinkedinIn,
-    "https://www.linkedin.com/company/finunique-small-private-limited/",
-    "LinkedIn",
-    "bg-[#0a66c2]",
-  ],
-  [FaXTwitter, "https://x.com/Finuniques", "X", "bg-black"],
+  [FaXTwitter, "https://x.com/SaveDost_", "X", "bg-black"],
 ];
 
-function FooterHeading({ children }) {
+function FooterHeading({ children, centered = false }) {
   return (
-    <h3 className="mb-5 text-xs font-bold uppercase tracking-wide text-white">
+    <h3
+      className={`mb-5 text-xs font-bold uppercase tracking-wide text-[#0C3D4C] ${centered ? "text-center" : ""}`}
+    >
       {children}
-      <span className="mt-2 block h-0.5 w-8 bg-lime-400" />
+      <span className={`mt-2 block h-0.5 w-8 bg-[#018EDE] ${centered ? "mx-auto" : ""}`} />
     </h3>
   );
 }
@@ -111,42 +107,44 @@ export default function SiteFooter() {
   return (
     <footer
       id="site-footer"
-      className="border-t border-white/20 bg-[radial-gradient(circle_at_center,_#018EDE,_#0C3D4C_70%)] text-white"
+      className="border-t border-[#c7e3ea] bg-[#eaf6f9] text-[#0C3D4C]"
     >
-      <div className="mx-auto max-w-7xl px-5 pb-7 pt-10 sm:px-6 lg:py-12">
-        <div className="grid gap-9 sm:grid-cols-2 lg:grid-cols-[1.25fr_0.8fr_1fr_1.15fr_1.15fr] lg:gap-0">
-          <section className="lg:pr-8">
-            <Link href="/" className="inline-flex flex-col items-start" aria-label="SaveDost home">
+      <div className="mx-auto max-w-7xl px-5 pb-7 pt-0 sm:px-6 lg:pt-3 lg:pb-8">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-[1.25fr_0.8fr_1fr_1.15fr_1.15fr] lg:gap-0">
+          <section className="lg:pr-8 pt-0">
+            <Link href="/" className="inline-flex flex-col items-start gap-1" aria-label="SaveDost home">
               <Image
                 src="/image/SaveDost logo.png"
-                alt="SaveDost"
+                alt="SaveDost Logo"
                 width={1686}
                 height={933}
-                className="h-auto w-48 object-contain"
+                className="h-auto  w-50 object-contain sm:w-36"
+                priority
               />
-              <span className="-mt-5 ml-6 text-[9px] font-bold uppercase tracking-[0.18em] text-white/75">
+              <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#315f6d]">
                 Powered by FinUnique
               </span>
             </Link>
-            <p className="mt-4 max-w-xs text-xs leading-5 text-white/80">
-              Innovating digital payment solutions and simplifying business operations across India.
+            <p className="mt-3 max-w-xs text-xs leading-5 text-[#456b76]">
+              Making everyday digital payments and financial services simple, secure and accessible
+              for users across India.
             </p>
-            <div className="mt-5 space-y-3 text-xs text-white/90">
+            <div className="mt-5 space-y-3 text-xs text-[#315f6d]">
               <a
-                href="mailto:support@savedost.in"
-                className="flex items-center gap-2 hover:text-lime-300"
+                href="mailto:support@savedost.com"
+                className="flex items-center gap-2 transition hover:text-[#00a8e8]"
               >
-                <Mail size={14} /> support@savedost.in
+                <Mail size={14} /> support@savedost.com
               </a>
             </div>
           </section>
 
-          <section className="border-white/15 lg:border-l lg:px-8">
+          <section className="border-[#c7e3ea] lg:border-l lg:px-8">
             <FooterHeading>Quick Links</FooterHeading>
             <ul className="space-y-3 text-xs">
               {quickLinks.map(([label, href]) => (
                 <li key={href}>
-                  <Link href={href} className="text-white/85 transition hover:text-lime-300">
+                  <Link href={href} className="text-[#315f6d] transition hover:text-[#00a8e8]">
                     {label}
                   </Link>
                 </li>
@@ -154,13 +152,13 @@ export default function SiteFooter() {
             </ul>
           </section>
 
-          <section className="border-white/15 lg:border-l lg:px-8">
+          <section className="border-[#c7e3ea] lg:border-l lg:px-8">
             <FooterHeading>Tools</FooterHeading>
             <ul className="space-y-4 text-xs">
               <li>
                 <Link
                   href="/free-credit-score"
-                  className="flex items-center gap-2 text-white/85 hover:text-lime-300"
+                  className="flex items-center gap-2 text-[#315f6d] transition hover:text-[#00a8e8]"
                 >
                   <Gauge size={14} /> Free Credit Score
                 </Link>
@@ -168,7 +166,7 @@ export default function SiteFooter() {
               <li>
                 <Link
                   href="/loan-emi"
-                  className="flex items-center gap-2 whitespace-nowrap text-white/85 hover:text-lime-300"
+                  className="flex items-center gap-2 whitespace-nowrap text-[#315f6d] transition hover:text-[#00a8e8]"
                 >
                   <Gauge size={14} className="shrink-0" /> Loan EMI Calculator
                 </Link>
@@ -176,15 +174,15 @@ export default function SiteFooter() {
             </ul>
           </section>
 
-          <section className="border-white/15 lg:border-l lg:px-8">
+          <section className="border-[#c7e3ea] lg:border-l lg:px-8">
             <FooterHeading>Company</FooterHeading>
-            <p className="text-xs leading-5 text-white/80">
-              SaveDost, powered by FinUnique, brings recharge, bill payments, travel bookings and
-              essential financial services together on one secure platform for customers and
-              merchants across India.
+            <p className="text-xs leading-5 text-[#456b76]">
+              SaveDost, powered by FinUnique, is a trusted digital services platform that helps
+              users across India access recharges, bill payments, travel bookings and essential
+              financial services securely and conveniently.
             </p>
-            <div className="mt-5 flex items-center gap-3 rounded-xl bg-white/10 p-4 ring-1 ring-white/10">
-              <ShieldCheck size={30} className="shrink-0 text-lime-400" />
+            <div className="mt-5 flex items-center gap-3 rounded-xl bg-white p-4 shadow-sm ring-1 ring-[#c7e3ea]">
+              <ShieldCheck size={30} className="shrink-0 text-[#00a8e8]" />
               <p className="text-xs font-medium leading-5">
                 Trusted by 3,50,000+ customers across India
               </p>
@@ -192,9 +190,9 @@ export default function SiteFooter() {
           </section>
 
           <section className="space-y-4 lg:pl-8">
-            <div className="rounded-xl bg-white/10 p-5 ring-1 ring-white/10">
-              <FooterHeading>Verified &amp; Secure</FooterHeading>
-              <div className="flex items-center gap-4">
+            <div className="rounded-xl bg-white p-5 shadow-sm ring-1 ring-[#c7e3ea]">
+              <FooterHeading centered>Verified &amp; Secure</FooterHeading>
+              <div className="flex items-center justify-center gap-4">
                 <Image
                   src="/home/pci-logo.png"
                   width={82}
@@ -212,9 +210,9 @@ export default function SiteFooter() {
               </div>
             </div>
 
-            <div className="rounded-xl bg-white/10 p-5 ring-1 ring-white/10">
-              <FooterHeading>Follow Us</FooterHeading>
-              <div className="flex flex-nowrap items-center gap-2.5">
+            <div className="rounded-xl bg-white p-5 shadow-sm ring-1 ring-[#c7e3ea]">
+              <FooterHeading centered>Follow Us</FooterHeading>
+              <div className="flex flex-nowrap items-center justify-center gap-2.5">
                 {socialLinks.map(([Icon, href, label, color]) => (
                   <Link
                     key={label}
@@ -233,7 +231,7 @@ export default function SiteFooter() {
         </div>
 
         <nav
-          className="mt-10 grid gap-7 border-t border-white/15 pt-9 sm:grid-cols-2 lg:grid-cols-5"
+          className="mt-10 grid gap-7 border-t border-[#c7e3ea] pt-9 sm:grid-cols-2 lg:grid-cols-5"
           aria-label="Footer services navigation"
         >
           {navigationLinks.map((group) => (
@@ -242,7 +240,7 @@ export default function SiteFooter() {
               <ul className="grid grid-cols-2 gap-x-5 gap-y-3 text-xs">
                 {group.links.map(([label, href]) => (
                   <li key={href}>
-                    <Link href={href} className="text-white/85 transition hover:text-lime-300">
+                    <Link href={href} className="text-[#315f6d] transition hover:text-[#00a8e8]">
                       {label}
                     </Link>
                   </li>
@@ -253,8 +251,8 @@ export default function SiteFooter() {
         </nav>
       </div>
 
-      <div className="border-t border-white/20">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-5 py-5 text-center text-[11px] text-white/80 sm:px-6 lg:flex-row lg:text-left">
+      <div className="border-t border-[#c7e3ea] bg-white/45">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-5 py-5 text-center text-[11px] text-[#456b76] sm:px-6 lg:flex-row lg:text-left">
           <p>
             &copy; {new Date().getFullYear()} SaveDost. Powered by Finunique Small Private Limited.
             All rights reserved.
@@ -264,7 +262,7 @@ export default function SiteFooter() {
               <Link
                 key={href}
                 href={href}
-                className={`hover:text-lime-300 ${index < legalLinks.length - 1 ? "after:ml-3 after:text-white/30 after:content-['|']" : ""}`}
+                className={`transition hover:text-[#00a8e8] ${index < legalLinks.length - 1 ? "after:ml-3 after:text-[#9bb9c2] after:content-['|']" : ""}`}
               >
                 {label}
               </Link>

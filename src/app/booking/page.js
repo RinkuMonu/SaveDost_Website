@@ -220,7 +220,7 @@ function Page() {
           ],
         },
         aeps: {
-          subheading: "HOTAL BOOKING",
+          subheading: "HOTEL BOOKING",
           heading: "Turant Confirmation, Aasaan Booking.",
           description:
             "It has never been so easy to book your hotel stay. While booking with SaveDost, one can search, compare, and book a room just by clicking a few times. From budget rooms to luxurious suites, we make booking a smooth and easy process for travellers.",

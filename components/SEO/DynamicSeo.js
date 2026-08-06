@@ -86,7 +86,7 @@ const seoCache = new Map();
 const DynamicSeo = () => {
   const pathname = usePathname();
   const currentPath = pathname || "/";
-  const baseUrl = "https://savedost.in";
+  const baseUrl = "https://savedost.com";
   const [seoData, setSeoData] = useState(null);
 
   useEffect(() => {

@@ -7,7 +7,7 @@ export default function ChatSection() {
   const [open, setOpen] = useState(false);
 
   const suggestions = useMemo(
-    () => ["Special Offers", "Summer Outfits", "Buy a Gifcard", "New Collection"],
+    () => ["Special Offers", "Summer Outfits", "Buy a Gift Card", "New Collection"],
     []
   );
 

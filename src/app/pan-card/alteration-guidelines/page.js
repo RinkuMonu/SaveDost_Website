@@ -124,7 +124,7 @@ export default function Page() {
       content: (
         <>
           <ul className="list-disc pl-6">
-            <li>Contact support@savedost.in for current document-submission instructions.</li>
+            <li>Contact support@savedost.com for current document-submission instructions.</li>
             <li>
               For paperless applications (e-KYC, e-Sign, DSC), no physical documents are required.
             </li>
@@ -147,7 +147,7 @@ export default function Page() {
       content: (
         <>
           <ul className="list-disc pl-6">
-            <li>Email: support@savedost.in</li>
+            <li>Email: support@savedost.com</li>
           </ul>
         </>
       ),
@@ -162,3 +162,4 @@ export default function Page() {
     />
   );
 }
+

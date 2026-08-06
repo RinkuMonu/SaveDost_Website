@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import axios from "axios";
 import { Calendar, User, Tag, ArrowLeft, TrendingUp, Clock, Folder } from "lucide-react";
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import { MdShare } from "react-icons/md";
 import { MdArrowOutward } from "react-icons/md";
 
@@ -323,12 +323,6 @@ export default async function BlogPostPage({ params }) {
                     className="p-2 rounded-full border border-[#115D8E]/50 hover:bg-gray-100"
                   >
                     <FaTwitter className="h-4 w-4 text-[#115D8E]" />
-                  </Link>
-                  <Link
-                    href=""
-                    className="p-2 rounded-full border border-[#115D8E]/50 hover:bg-gray-100"
-                  >
-                    <FaLinkedinIn className="h-4 w-4 text-[#115D8E]" />
                   </Link>
                   <Link
                     href=""

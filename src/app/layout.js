@@ -5,7 +5,7 @@ import DynamicSeo from "../../components/SEO/DynamicSeo";
 import SiteLayout from "../../components/layout/SiteLayout";
 
 export const metadata = {
-  metadataBase: new URL("https://savedost.in"),
+  metadataBase: new URL("https://savedost.com"),
   title: {
     default: "SaveDost | Payments, Recharge and Financial Services",
     template: "%s | SaveDost",
@@ -74,10 +74,10 @@ export default function RootLayout({ children }) {
         "@type": "Article",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://savedost.in/"
+          "@id": "https://savedost.com/"
         },
         "headline": "SaveDost Bill Payment, Recharge, Insurance, Booking, Credit Card, pancard, Loan",
-        "image": "https://savedost.in/_next/image?url=%2Fimage%2Fmen-home.png&w=1200&q=75",
+        "image": "https://savedost.com/_next/image?url=%2Fimage%2Fmen-home.png&w=1200&q=75",
         "author": { "@type": "Organization", "name": "" },
         "publisher": {
           "@type": "Organization",
@@ -102,7 +102,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </Script>
         <meta
           property="og:image"
-          content="https://savedost.in/image/SaveDost-initial.png"
+          content="https://savedost.com/image/SaveDost-initial.png"
         />
       </head>
 
@@ -127,3 +127,4 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </html>
   );
 }
+

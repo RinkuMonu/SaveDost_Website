@@ -236,7 +236,7 @@ function page() {
             </div>
           </div>
           <div>
-            <Image src="/dmt/dmtbanner.png" width={400} height={400} alt='homesecutity' className='object-contain w-full h-full pt-8' />
+            <Image src="/dmt/dmtbanner.png" width={400} height={400} alt="Money transfer service" className="object-contain w-full h-full pt-8" />
           </div>
         </div>
 

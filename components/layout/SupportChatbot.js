@@ -65,7 +65,7 @@ const SERVICE_MENU = [
 
 // 👇 EDIT THESE to your real company contact details — shown at the end of the lead flow
 const COMPANY_CONTACT = {
-  email: "support@savedost.in",
+  email: "support@savedost.com",
 };
 
 // Ordered steps for the lead-capture flow. This now runs automatically
