@@ -91,7 +91,7 @@ export default function page() {
 
   const whydata = {
     title1: "Why Choose CommercialSecure",
-    title2: "India's Most Trusted Commercial Insurancess Partner",
+    title2: "India's Most Trusted Commercial Insurance Partner",
     desc: "We provide comprehensive commercial insurance solutions with unmatched benefits and customer service. Join over 1 million satisfied riders.",
     features: [
       {

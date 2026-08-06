@@ -407,8 +407,8 @@ export default function ProfilePage() {
               <SupportLink
                 icon={Mail}
                 label="Email us"
-                text="support@savedost.in"
-                href="mailto:support@savedost.in"
+                text="support@savedost.com"
+                href="mailto:support@savedost.com"
               />
             </div>
           </section>

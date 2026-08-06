@@ -58,7 +58,7 @@ export default function LegalPolicyPage({
           </div>
           <div className="bg-white p-5">
             <p className="text-xs font-bold uppercase text-slate-400">Support</p>
-            <p className="mt-2 text-slate-600">support@savedost.in</p>
+            <p className="mt-2 text-slate-600">support@savedost.com</p>
           </div>
         </div>
 

@@ -99,7 +99,7 @@ const sections = [
     id: "law-support",
     title: "Governing Law and Support",
     paragraphs: [
-      "These terms are governed by Indian law. Subject to applicable consumer law, disputes fall under the jurisdiction of Jaipur, Rajasthan. For assistance, email support@savedost.in.",
+      "These terms are governed by Indian law. Subject to applicable consumer law, disputes fall under the jurisdiction of Jaipur, Rajasthan. For assistance, email support@savedost.com.",
     ],
   },
 ];
@@ -116,3 +116,4 @@ export default function TermsOfUsePage() {
     />
   );
 }
+

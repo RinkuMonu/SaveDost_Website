@@ -13,7 +13,7 @@ import DynamicTable from "../../../../components/DynamicTable";
 
 export default function page() {
   const data = {
-    subheading: "TAXI INSUARANCE",
+    subheading: "TAXI INSURANCE",
     heading: "Har Ride Secure, Tension Bilkul Door",
     description:
       "Your taxi works hard every day to make sure it’s protected. Get reliable taxi insurance that covers damages, liabilities, and risks so your income never stops.",

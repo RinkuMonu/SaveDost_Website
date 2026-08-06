@@ -43,7 +43,7 @@ const homeFaqs = [
   {
     question: "Where can I get help with my account or a transaction?",
     answer:
-      "Use the Contact Us page or email support@savedost.in with your registered mobile number and transaction reference. Support is available Monday to Saturday, 9:30 AM to 6:30 PM.",
+      "Use the Contact Us page or email support@savedost.com with your registered mobile number and transaction reference. Support is available Monday to Saturday, 9:30 AM to 6:30 PM.",
   },
 ];
 

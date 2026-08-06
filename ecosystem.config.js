@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: "savedost.in",
+      name: "savedost.com",
       script: "npm",
       args: "start", // next start
       cwd: "/home/finuniqu/public_html/Sevenuniques_Utility_Website",
@@ -12,3 +12,4 @@ module.exports = {
     },
   ],
 };
+

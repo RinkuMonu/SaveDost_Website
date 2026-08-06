@@ -157,7 +157,7 @@ const privacySections = [
       "In compliance with Indian law, we have appointed a Grievance Officer to address privacy-related concerns.",
       "Grievance Officer",
       "Finunique Small Private Limited",
-      "Email: support@savedost.in",
+      "Email: support@savedost.com",
       "All complaints will be acknowledged and resolved promptly.",
     ],
   },

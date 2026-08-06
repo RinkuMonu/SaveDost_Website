@@ -9,6 +9,7 @@ import { FaApple } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { clearClientSession, getClientSession } from "../auth/sessionClient";
 import {
+  ArrowRight,
   ChevronDown,
   CircleUserRound,
   Download,
@@ -236,7 +237,7 @@ export default function SiteHeader() {
 
   return (
     <header
-      className={`sticky top-0 border-b border-gray-100 bg-white shadow-[0_2px_8px_rgba(0,0,0,0.04)] ${profileOpen || downloadOpen ? "z-[2000]" : "z-50"}`}
+      className={`sticky top-0 border-b border-gray-100 bg-white shadow-[0_2px_8px_rgba(0,0,0,0.04)] ${profileOpen || downloadOpen ? "z-2000" : "z-50"}`}
       aria-busy={isNavigating}
     >
       <div
@@ -353,45 +354,27 @@ export default function SiteHeader() {
               transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
               className="relative ml-auto flex h-full w-[min(92vw,410px)] flex-col overflow-hidden bg-[#f5fafb] shadow-[-22px_0_60px_rgba(7,28,42,.28)]"
             >
-              <div className="relative overflow-hidden bg-linear-to-br from-[#073f58] to-[#0C3D4C] px-5 pb-5 pt-[max(1.1rem,env(safe-area-inset-top))] text-white">
-                <span className="pointer-events-none absolute -right-12 -top-12 h-36 w-36 rounded-full border-[28px] border-white/5" />
-                <div className="relative flex items-center justify-between">
-                  <Link
-                    href="/"
-                    onClick={(event) => {
-                      closeMobileMenu();
-                      startNavigation(event);
-                    }}
-                    className="flex items-center gap-3"
-                  >
-                    <Image
-                      src="/image/SaveDost logo.png"
-                      width={1686}
-                      height={933}
-                      alt="SaveDost"
-                      className="h-auto w-40 object-contain"
-                    />
-                  </Link>
-                  <button
-                    type="button"
-                    onClick={closeMobileMenu}
-                    aria-label="Close navigation"
-                    className="grid h-10 w-10 place-items-center rounded-full border border-white/15 bg-white/10 text-white transition hover:bg-white/20"
-                  >
-                    <X size={21} />
-                  </button>
-                </div>
+              <div className="relative overflow-hidden bg-linear-to-br from-[#073f58] to-[#0C3D4C] px-4 pb-4 pt-[max(1rem,env(safe-area-inset-top))] text-white">
+                <span className="pointer-events-none absolute -right-12 -top-12 h-32 w-32 rounded-full border-24px border-white/5" />
+                <button
+                  type="button"
+                  onClick={closeMobileMenu}
+                  aria-label="Close navigation"
+                  className="absolute right-4 top-[max(1rem,env(safe-area-inset-top))] z-10 grid h-10 w-10 place-items-center rounded-full border border-white/15 bg-white/10 text-white transition hover:bg-white/20"
+                >
+                  <X size={21} />
+                </button>
 
-                {session?.authenticated && (
+                {session?.authenticated ? (
                   <Link
                     href="/profile"
                     onClick={(event) => {
                       closeMobileMenu();
                       startNavigation(event);
                     }}
-                    className="relative mt-5 flex w-full items-center gap-3 rounded-2xl border border-white/12 bg-white/8 p-3 text-left"
+                    className="group relative flex w-full items-start gap-3 rounded-2xl border border-white/15 bg-white/10 p-3 pr-16 text-left shadow-sm transition hover:bg-white/15"
                   >
-                    <span className="grid h-10 w-10 place-items-center rounded-xl bg-white font-extrabold text-[#026381]">
+                    <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-white font-extrabold text-[#026381] shadow-sm">
                       {accountInitial || <CircleUserRound size={21} />}
                     </span>
                     <span className="min-w-0">
@@ -399,9 +382,19 @@ export default function SiteHeader() {
                       <small className="mt-0.5 block truncate text-[10px] text-white/65">
                         {session.user?.mobile || "View your account"}
                       </small>
+                      <span className="mt-2 inline-flex items-center gap-1.5 rounded-full bg-white/10 px-2.5 py-1 text-[10px] font-bold text-[#7dd3fc] transition group-hover:bg-white/15 group-hover:text-white">
+                        View account <ArrowRight size={12} />
+                      </span>
                     </span>
-                    <span className="ml-auto h-2.5 w-2.5 rounded-full bg-emerald-400" />
+                    <span
+                      className="absolute bottom-4 right-4 h-2.5 w-2.5 rounded-full bg-emerald-400 shadow-[0_0_0_3px_rgba(52,211,153,.12)]"
+                      aria-label="Account active"
+                    />
                   </Link>
+                ) : (
+                  <div className="flex min-h-10 items-center pr-14">
+                    <p className="text-sm font-extrabold uppercase tracking-[0.14em]">Navigation</p>
+                  </div>
                 )}
               </div>
 
@@ -611,7 +604,7 @@ export default function SiteHeader() {
       {downloadOpen &&
         createPortal(
           <div
-            className="fixed inset-0 z-[3000] flex items-center justify-center overflow-y-auto bg-[#132238]/75 p-4"
+            className="fixed inset-0 z-3000 flex items-center justify-center overflow-y-auto bg-[#132238]/75 p-4"
             role="dialog"
             aria-modal="true"
             aria-labelledby="header-download-title"
@@ -720,7 +713,7 @@ function ProfileDrawerItem({ icon: Icon, label, value }) {
       <p className="flex items-center gap-2 text-xs font-semibold text-slate-500">
         <Icon size={15} /> {label}
       </p>
-      <p className="mt-2 break-words font-bold text-[#0C3D4C]">{value}</p>
+      <p className="mt-2 wrap-break-words font-bold text-[#0C3D4C]">{value}</p>
     </div>
   );
 }

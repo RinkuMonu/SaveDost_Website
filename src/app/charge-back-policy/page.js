@@ -82,7 +82,7 @@ const sections = [
     id: "support",
     title: "Support",
     paragraphs: [
-      "Submit disputes to support@savedost.in. Include complete transaction information to avoid delays.",
+      "Submit disputes to support@savedost.com. Include complete transaction information to avoid delays.",
     ],
   },
 ];
@@ -99,3 +99,4 @@ export default function ChargebackPolicyPage() {
     />
   );
 }
+

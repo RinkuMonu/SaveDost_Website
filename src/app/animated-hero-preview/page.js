@@ -133,7 +133,7 @@ export default function AnimatedHeroPreview() {
               Explore SaveDost <ArrowRight size={18} />
             </button>
             <Link
-              href="https://www.youtube.com/@finuniques"
+              href="https://www.youtube.com/@Save_Dost"
               target="_blank"
               rel="noopener noreferrer"
               className="preview-watch"

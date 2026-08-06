@@ -18,7 +18,7 @@ export default function Guidelines() {
     },
     {
       title: "Contact Us",
-      desc: `For dependable online PAN service support, email support@savedost.in.`,
+      desc: `For dependable online PAN service support, email support@savedost.com.`,
     },
   ];
 
@@ -37,3 +37,4 @@ export default function Guidelines() {
     </>
   );
 }
+
