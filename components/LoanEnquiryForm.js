@@ -23,12 +23,16 @@ const productLabels = {
   construction: "Construction Equipment Loan",
 };
 
-export default function LoanEnquiryForm({ initialProduct = "instant", mode = "enquiry" }) {
+export default function LoanEnquiryForm({
+  initialProduct = "instant",
+  mode = "enquiry",
+  initialPhone = "",
+}) {
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
     name: "",
     email: "",
-    phone: "",
+    phone: initialPhone.replace(/[^0-9]/g, "").slice(0, 10),
     product: productLabels[initialProduct] ? initialProduct : "instant",
     employment: "",
     monthlyIncome: "",
@@ -237,6 +241,15 @@ export default function LoanEnquiryForm({ initialProduct = "instant", mode = "en
                       type={type}
                       placeholder={placeholder}
                       required={required}
+                      {...(name === "phone"
+                        ? {
+                            inputMode: "numeric",
+                            autoComplete: "tel-national",
+                            pattern: "[0-9]{10}",
+                            minLength: 10,
+                            maxLength: 10,
+                          }
+                        : {})}
                       className="w-full rounded-xl border border-[#cfe4e9] bg-[#fbfdfe] py-3 pl-11 pr-4 text-sm outline-none focus:border-[#00a8e8]"
                     />
                   </span>

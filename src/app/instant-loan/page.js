@@ -13,10 +13,11 @@ import {
   LockKeyhole,
   ShieldCheck,
   Smartphone,
-  Sparkles,
   WalletCards,
 } from "lucide-react";
 import FAQ from "../../../components/Bike Insurance/FAQ";
+import InstantLoanHeroForm from "../../../components/InstantLoanHeroForm";
+import LoanEMICalculator from "../../../components/LoanEMICalculator";
 import ScrollReveal from "../../../components/ScrollReveal";
 
 export const metadata = {
@@ -173,53 +174,44 @@ const faqs = [
 export default function InstantLoanPage() {
   return (
     <>
-      <section className="relative isolate min-h-[500px] overflow-hidden bg-[#082f3e] sm:min-h-[560px] lg:min-h-[610px]">
+      <section className="relative isolate overflow-hidden bg-[#082f3e]">
         <Image
           src="/loan/generated/instant-loan-hero.png"
           fill
           priority
-          alt="Woman using SaveDost digital instant loan assistance"
-          className="object-cover object-[68%_center] sm:object-center"
+          alt="Professional woman reviewing her finances online"
+          className="object-cover object-[72%_center]"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-[#082f3e]/58 sm:bg-transparent sm:bg-gradient-to-r sm:from-[#082f3e]/96 sm:via-[#082f3e]/76 sm:to-transparent" />
-        <div className="relative mx-auto flex min-h-[500px] max-w-7xl items-center px-4 py-10 sm:min-h-[560px] sm:px-6 sm:py-14 lg:min-h-[610px] lg:px-8 lg:py-16">
-          <ScrollReveal className="max-w-2xl text-white">
-            <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.14em] text-white shadow-sm backdrop-blur">
-              <Sparkles size={15} /> Fast, guided and digital
-            </span>
-            <h1 className="mt-4 max-w-2xl text-3xl font-extrabold leading-[1.1] tracking-tight text-white sm:mt-6 sm:text-5xl lg:text-6xl">
-              Instant loan help for life&apos;s
-              <span className="text-[#9de4ef]"> urgent moments.</span>
-            </h1>
-            <p className="mt-4 max-w-xl text-sm leading-6 text-white/80 sm:mt-6 sm:text-lg sm:leading-7">
-              SaveDost simplifies the loan discovery journey with digital guidance, clear document
-              support, and access to options that may match your needs.
+        <div className="absolute inset-0 bg-[#082f3e]/20 lg:bg-gradient-to-r lg:from-[#082f3e]/20 lg:via-[#082f3e]/10 lg:to-transparent" />
+        <div aria-hidden="true" className="loan-hero-ambient absolute inset-0" />
+        <div className="relative mx-auto grid min-h-[720px] max-w-7xl items-center px-4 py-10 sm:px-6 sm:py-14 lg:min-h-[660px] lg:grid-cols-2 lg:px-8 lg:py-16">
+          <ScrollReveal className="max-w-xl text-white">
+            <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#9de4ef]">
+              Instant loan
             </p>
-            <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap">
-              <Link
-                href="/loan/request?product=instant&mode=enquiry"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-white px-5 py-3 text-sm font-bold text-[#026381] shadow-lg transition hover:-translate-y-1 hover:shadow-xl sm:w-auto sm:px-6 sm:py-3.5"
-              >
-                Start your enquiry <ArrowRight size={18} />
-              </Link>
+            <h1 className="mt-4 text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
+              Loans for life&apos;s
+              <span className="block text-[#9de4ef]">big plans.</span>
+            </h1>
+            <p className="mt-4 max-w-lg text-sm leading-6 text-white/80 sm:mt-5 sm:text-lg sm:leading-7">
+              Get clear digital guidance, document support, and help exploring loan options that may
+              fit your needs.
+            </p>
+            <InstantLoanHeroForm />
+            <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-xs font-semibold text-white/80">
+              <span className="flex items-center gap-2">
+                <CheckCircle2 size={15} className="text-[#9de4ef]" /> Secure process
+              </span>
+              <span className="flex items-center gap-2">
+                <CheckCircle2 size={15} className="text-[#9de4ef]" /> Clear guidance
+              </span>
               <Link
                 href="/loan-emi"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-white/25 bg-white/10 px-5 py-3 text-sm font-bold text-white backdrop-blur transition hover:bg-white/20 sm:w-auto sm:px-6 sm:py-3.5"
+                className="inline-flex items-center gap-1 text-[#9de4ef] underline-offset-4 hover:underline"
               >
-                Calculate EMI <IndianRupee size={17} />
+                Calculate EMI <IndianRupee size={14} />
               </Link>
-            </div>
-            <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-xs font-semibold text-white/75">
-              <span className="flex items-center gap-2">
-                <CheckCircle2 size={16} className="text-[#8ac954]" /> Online assistance
-              </span>
-              <span className="flex items-center gap-2">
-                <CheckCircle2 size={16} className="text-[#8ac954]" /> Transparent guidance
-              </span>
-              <span className="flex items-center gap-2">
-                <CheckCircle2 size={16} className="text-[#8ac954]" /> Secure process
-              </span>
             </div>
           </ScrollReveal>
         </div>
@@ -255,7 +247,7 @@ export default function InstantLoanPage() {
               How SaveDost helps
             </p>
             <h2 className="mt-3 text-3xl font-extrabold text-[#0C3D4C] sm:text-4xl">
-              A simpler way to explore instant credit
+              How SaveDost helps you explore instant credit
             </h2>
             <p className="mt-4 leading-7 text-slate-600">
               From understanding requirements to reviewing the next step, our platform keeps the
@@ -279,6 +271,17 @@ export default function InstantLoanPage() {
           </div>
         </div>
       </section>
+
+      <LoanEMICalculator
+        loanType="Instant"
+        initialAmount={200000}
+        initialRate={18}
+        initialMonths={24}
+        amountMax={500000}
+        exampleAmount={100000}
+        exampleRate={18}
+        exampleMonths={12}
+      />
 
       <section className="bg-[#f4f9fa] px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-20">
         <div className="mx-auto max-w-7xl">
@@ -408,7 +411,7 @@ export default function InstantLoanPage() {
         </div>
       </section>
 
-      <section className="px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+      {/* <section className="px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
         <div className="mx-auto max-w-7xl">
           <ScrollReveal className="mx-auto max-w-3xl text-center">
             <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#0289ad]">
@@ -451,7 +454,7 @@ export default function InstantLoanPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="overflow-hidden bg-[#0C3D4C] px-4 py-10 text-white sm:px-6 sm:py-14 lg:px-8 lg:py-20">
         <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-2">

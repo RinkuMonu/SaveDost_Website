@@ -58,13 +58,12 @@ const navGroups = [
   {
     label: "Loans",
     links: [
-      { label: "Loan Overview", href: "/loan" },
+     
       { label: "Instant Loan", href: "/instant-loan" },
       { label: "Personal Loan", href: "/loan/personal-loan" },
-      { label: "Home Loan", href: "/loan/home-loan" },
-      { label: "Car Loan", href: "/loan/car-loan" },
+    
       { label: "Business Loan", href: "/loan/business-loan" },
-      { label: "Construction Equipment Loan", href: "/loan/construction-equipment-loan" },
+     
     ],
   },
   {
@@ -267,7 +266,7 @@ export default function SiteHeader() {
           className="ml-auto hidden h-full min-w-0 items-center justify-end gap-2 lg:flex xl:gap-5"
           aria-label="Main navigation"
         >
-          <div className="flex h-full min-w-0 items-center gap-2 xl:gap-6">
+          <div className="flex h-full min-w-0 items-center gap-1 xl:gap-6">
             {navGroups.map((group) => (
               <DesktopDropdown
                 key={group.label}

@@ -89,9 +89,34 @@ button {
   will-change: transform;
 }
 
+.loan-hero-ambient {
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 20% 45%, rgb(2 137 173 / 24%), transparent 48%),
+    radial-gradient(ellipse at 76% 60%, rgb(157 228 239 / 12%), transparent 42%);
+  background-size: 125% 125%;
+  background-position: 0% 50%;
+  animation: loan-hero-ambient-drift 18s ease-in-out infinite alternate;
+  will-change: background-position;
+}
+
+@keyframes loan-hero-ambient-drift {
+  from {
+    background-position: 0% 50%;
+  }
+
+  to {
+    background-position: 100% 50%;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .header-navigation-progress {
+  .header-navigation-progress,
+  .loan-hero-ambient {
     animation: none;
+  }
+
+  .header-navigation-progress {
     width: 100%;
   }
 }

@@ -12,6 +12,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import FAQ from "./Bike Insurance/FAQ";
+import LoanEMICalculator from "./LoanEMICalculator";
 import ScrollReveal from "./ScrollReveal";
 
 export default function LoanProductPage({ product }) {
@@ -29,6 +30,7 @@ export default function LoanProductPage({ product }) {
         <div
           className={`absolute inset-0 bg-[#082f3e]/58 sm:bg-transparent sm:bg-gradient-to-r ${product.heroOverlay}`}
         />
+        <div aria-hidden="true" className="loan-hero-ambient absolute inset-0" />
         <div className="relative mx-auto flex min-h-[500px] max-w-7xl items-center px-4 py-10 sm:min-h-[560px] sm:px-6 sm:py-14 lg:min-h-[610px] lg:px-8 lg:py-16">
           <ScrollReveal className="max-w-2xl text-white">
             <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[.15em] backdrop-blur">
@@ -106,6 +108,19 @@ export default function LoanProductPage({ product }) {
           </div>
         </div>
       </section>
+
+      {product.slug === "business" && (
+        <LoanEMICalculator
+          loanType="Business"
+          initialAmount={3000000}
+          initialRate={9}
+          initialMonths={36}
+          amountMax={6000000}
+          exampleAmount={1000000}
+          exampleRate={12}
+          exampleMonths={36}
+        />
+      )}
 
       <section className="px-4 pb-10 sm:px-6 sm:pb-14 lg:px-8 lg:pb-20">
         <div className="mx-auto grid max-w-7xl gap-5 lg:grid-cols-2">
@@ -233,7 +248,7 @@ export default function LoanProductPage({ product }) {
         </div>
       </section>
 
-      <section className="px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-20">
+      {/* <section className="px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-20">
         <div className="mx-auto grid max-w-7xl gap-5 md:grid-cols-3">
           {[
             [
@@ -259,7 +274,7 @@ export default function LoanProductPage({ product }) {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       <FAQ
         faqs={product.faqs}

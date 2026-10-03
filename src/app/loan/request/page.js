@@ -11,6 +11,7 @@ export default async function LoanRequestPage({ searchParams }) {
     <LoanEnquiryForm
       initialProduct={params?.product || "instant"}
       mode={params?.mode === "eligibility" ? "eligibility" : "enquiry"}
+      initialPhone={params?.phone || ""}
     />
   );
 }
