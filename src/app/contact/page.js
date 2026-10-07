@@ -5,6 +5,7 @@ import { MdOutlineMail } from "react-icons/md";
 import { FaRegClock } from "react-icons/fa6";
 import axios from "axios";
 import Swal from "sweetalert2";
+import saveDostData from "../../../save_dost.json";
 
 function Contact() {
   const data = {
@@ -161,7 +162,7 @@ function Contact() {
               query and our support team will help you.
             </p>
             <div className="mt-7 flex flex-wrap justify-center gap-3 lg:justify-start">
-              <a href="mailto:support@savedost.com" className="pan-hero-button gap-2">
+              <a href={`mailto:${saveDostData.contact_us.customer_support_email}`} className="pan-hero-button gap-2">
                 <MdOutlineMail className="text-lg" /> Email Us
               </a>
             </div>
@@ -316,8 +317,8 @@ function Contact() {
                 <div>
                   <p className="font-bold">Email</p>
                   <p className="mt-1 text-sm text-slate-600">
-                    <a href="mailto:support@savedost.com" className="hover:underline">
-                      support@savedost.com
+                    <a href={`mailto:${saveDostData.contact_us.customer_support_email}`} className="hover:underline">
+                      {saveDostData.contact_us.customer_support_email}
                     </a>
                   </p>
 
@@ -352,7 +353,7 @@ function Contact() {
                 <div>
                   <p className="font-bold">Email support</p>
                   <p className="mt-1 text-sm leading-5 text-slate-600">
-                    For assistance, write to support@savedost.com.
+                    For assistance, write to {saveDostData.contact_us.customer_support_email}.
                   </p>
                   {/* <p className="text-gray-500 text-sm">
                     <span className="font-bold">Corporate Office:</span>Office
