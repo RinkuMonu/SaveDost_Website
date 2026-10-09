@@ -199,10 +199,10 @@ const offerImages = {
 };
 
 const serviceOfferImages = {
-  mobile: ["/allservices/recharge.png", "/home/easy-payment3d.png", "/recharge/br.png"],
-  fastag: ["/fastag/fastag-banner.jpg", "/image/car-insurance.jpg", "/home/easy-payment3d.png"],
+  mobile: ["/allservices/recharge.png", "/home/easy-payment3d.png", "/dmt/dmtbanner.png"],
+  fastag: ["/dmt/newdmt1.png", "/home/ret3.png", "/home/easy-payment3d.png"],
   dth: ["/home/dth3d.png", "/home/dth.png", "/allservices/recharge.png"],
-  electricity: ["/image/electricity-vect.webp", "/home/bill-payments.png", "/bbps/billpayment.png"],
+  electricity: ["/home/ret3.png", "/home/bill-payments.png", "/bbps/billpayment.png"],
   "loan-emi": ["/financial-payments/loan-emi.png", "/loan/loan2.png", "/image/loan-img.png"],
   insurance: [
     "/financial-payments/insurance-premium.png",
@@ -212,7 +212,7 @@ const serviceOfferImages = {
   "piped-gas": ["/home/gasbill3d.png", "/home/gashome.png", "/allservices/mahanagar-gas.jpeg"],
   cylinder: ["/home/gasbill3d.png", "/allservices/bharat-gas.png", "/allservices/hp-gas.jpg"],
   water: ["/home/water3d.png", "/home/waterhome.png", "/bbps/billpayment.png"],
-  broadband: ["/recharge/br.png", "/home/easy-payment3d.png", "/bbps/billpayment.png"],
+  broadband: ["/home/ret4.png", "/home/easy-payment3d.png", "/bbps/billpayment.png"],
   challan: ["/fastag/fastag-banner.jpg", "/image/car-insurance.jpg", "/bbps/billpayment.png"],
   nps: [
     "/financial-payments/nps-contribution.png",
@@ -382,7 +382,7 @@ export default function ServiceOffers({ serviceSlug, serviceName }) {
                   />
                   <div className="relative -mx-5 -mt-5 mb-5 h-36 overflow-hidden bg-[radial-gradient(circle_at_center,#ffffff,#eaf6f8)] p-3">
                     <Image
-                      src={images[index]}
+                      src={index === 1 ? "/image/easy-payment.png" : images[index]}
                       alt={`${serviceName} offer`}
                       fill
                       sizes="(max-width: 767px) 100vw, 33vw"

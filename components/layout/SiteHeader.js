@@ -262,60 +262,66 @@ export default function SiteHeader() {
           />
         </Link>
 
-        <nav
-          className="ml-auto hidden h-full min-w-0 items-center justify-end gap-2 lg:flex xl:gap-5"
-          aria-label="Main navigation"
-        >
-          <div className="flex h-full min-w-0 items-center gap-1 xl:gap-6">
-            {navGroups.map((group) => (
-              <DesktopDropdown
-                key={group.label}
-                group={group}
-                activeMenu={activeMenu}
-                setActiveMenu={setActiveMenu}
-                startNavigation={startNavigation}
-              />
-            ))}
-          </div>
+  
+<nav
+  className="ml-auto hidden h-full min-w-0 flex-1 items-center justify-end gap-1 lg:flex xl:gap-3"
+  aria-label="Main navigation"
+>
+  <div className="flex h-full min-w-0 flex-1 items-center justify-end gap-0.5 xl:gap-3">
+    {navGroups.map((group) => (
+      <DesktopDropdown
+        key={group.label}
+        group={group}
+        activeMenu={activeMenu}
+        setActiveMenu={setActiveMenu}
+        startNavigation={startNavigation}
+      />
+    ))}
+  </div>
 
-          <div className="ml-1 flex shrink-0 items-center gap-2 border-l border-slate-200 pl-2 xl:ml-2 xl:gap-5 xl:pl-6">
-            <button
-              type="button"
-              onClick={() => setDownloadOpen(true)}
-              aria-label="Download App"
-              title="Download App"
-              className="flex items-center gap-1.5 whitespace-nowrap p-1 text-sm font-semibold text-[#002f6c] transition-colors hover:text-[#00a8e8] xl:p-0 xl:text-[15px]"
-            >
-              <Download size={17} strokeWidth={1.8} />
-              <span>Download App</span>
-            </button>
-            {session?.authenticated ? (
-              <button
-                type="button"
-                onClick={() => setProfileOpen(true)}
-                aria-label="Open my account"
-                title="My account"
-                className="group relative grid h-11 w-11 place-items-center rounded-full bg-linear-to-br from-[#00a8e8] to-[#0C3D4C] p-0.75 shadow-[0_6px_18px_rgba(2,99,129,0.22)] transition-all duration-200 hover:-translate-y-0.5 hover:scale-105 hover:shadow-[0_9px_22px_rgba(2,99,129,0.3)] focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-[#00a8e8]"
-              >
-                <span className="grid h-full w-full place-items-center rounded-full bg-white text-sm font-extrabold text-[#026381] transition-colors group-hover:bg-[#eff9fb]">
-                  {accountInitial || <CircleUserRound size={21} strokeWidth={2} />}
-                </span>
-                <span
-                  className="absolute right-0 bottom-0 h-3 w-3 rounded-full border-2 border-white bg-emerald-500"
-                  aria-hidden="true"
-                />
-              </button>
-            ) : (
-              <Link
-                href="/login"
-                onClick={startNavigation}
-                className="group flex items-center gap-2 rounded-lg border border-[#026381] bg-[#026381] px-4 py-2.5 text-sm font-semibold text-white shadow-[0_4px_12px_rgba(2,99,129,0.18)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#0C3D4C] hover:shadow-[0_6px_16px_rgba(2,99,129,0.25)]"
-              >
-                <CircleUserRound size={19} strokeWidth={2} /> Sign In
-              </Link>
-            )}
-          </div>
-        </nav>
+  <div className="ml-1 flex shrink-0 items-center gap-2 border-l border-slate-200 pl-2 xl:ml-2 xl:gap-3 xl:pl-3">
+    <button
+      type="button"
+      onClick={() => setDownloadOpen(true)}
+      aria-label="Download App"
+      title="Download App"
+      className="flex shrink-0 items-center gap-1 whitespace-nowrap p-1 text-xs font-semibold text-[#002f6c] transition-colors hover:text-[#00a8e8] xl:gap-1.5 xl:text-sm"
+    >
+      <Download size={16} strokeWidth={1.8} />
+      <span>Download App</span>
+    </button>
+
+    {session?.authenticated ? (
+      <button
+        type="button"
+        onClick={() => setProfileOpen(true)}
+        aria-label="Open my account"
+        title="My account"
+        className="group relative grid h-10 w-10 shrink-0 place-items-center rounded-full bg-linear-to-br from-[#00a8e8] to-[#0C3D4C] p-0.75 shadow-[0_6px_18px_rgba(2,99,129,0.22)] transition-all duration-200 hover:-translate-y-0.5 hover:scale-105 hover:shadow-[0_9px_22px_rgba(2,99,129,0.3)] focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-[#00a8e8]"
+      >
+        <span className="grid h-full w-full place-items-center rounded-full bg-white text-sm font-extrabold text-[#026381] transition-colors group-hover:bg-[#eff9fb]">
+          {accountInitial || (
+            <CircleUserRound size={21} strokeWidth={2} />
+          )}
+        </span>
+        <span
+          className="absolute right-0 bottom-0 h-3 w-3 rounded-full border-2 border-white bg-emerald-500"
+          aria-hidden="true"
+        />
+      </button>
+    ) : (
+      <Link
+        href="/login"
+        onClick={startNavigation}
+        className="group flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-lg border border-[#026381] bg-[#026381] px-3 py-2 text-xs font-semibold text-white shadow-[0_4px_12px_rgba(2,99,129,0.18)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#0C3D4C] hover:shadow-[0_6px_16px_rgba(2,99,129,0.25)] xl:gap-2 xl:px-3.5 xl:py-2.5 xl:text-sm"
+      >
+        <CircleUserRound size={17} strokeWidth={2} />
+        Sign In
+      </Link>
+    )}
+  </div>
+</nav>
+
 
         <button
           type="button"

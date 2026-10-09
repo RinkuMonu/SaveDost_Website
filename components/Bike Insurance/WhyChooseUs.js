@@ -3,7 +3,7 @@ export default function WhyChooseUs({ whydata }) {
     /* REDESIGNED INSURANCE BENEFITS: data mapping and behavior are unchanged. */
     <section
       id="why-choose"
-      className="bg-gradient-to-b from-[#eff9fb] to-[#e7f5f7] px-5 py-18 md:py-26"
+      className="bg-gradient-to-b from-[#eff9fb] to-[#e7f5f7] px-5 py-18 md:py-16"
     >
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-12">

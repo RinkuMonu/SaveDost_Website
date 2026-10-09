@@ -48,7 +48,7 @@ const providerGroups = {
   "loan-emi": [
     { name: "Bajaj Finserv", image: "/bank/bajaj-finserv.png" },
     { name: "Tata Capital", image: "/bank/tata-capital.png" },
-    "Bank Loan",
+   
     "NBFC Loan",
   ],
   insurance: [

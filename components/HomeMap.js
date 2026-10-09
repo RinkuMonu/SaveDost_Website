@@ -8,11 +8,11 @@ const LocationPin = ({ top, left, name }) => (
     style={{ top, left, transform: "translate(-50%, -50%)" }}
   >
     <Image
-      src="/image/SaveDost-initial.png"
+      src="/image/location-pin.png"
       alt={name}
-      width={16}
-      height={16}
-      className="drop-shadow-lg animate-pulse sm:w-[18px] sm:h-[18px]"
+      width={24}
+      height={24}
+      className="drop-shadow-lg animate-pulse sm:w-[18px] sm:h-[20px] md:h-[30px] md:w-[30px]"
     />
     <span className="mt-1 px-2 py-0.5 text-[10px] sm:text-[11px] rounded-md bg-black/70 text-white opacity-0 group-hover:opacity-100 transition whitespace-nowrap">
       {name}

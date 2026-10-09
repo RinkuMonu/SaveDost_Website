@@ -48,9 +48,18 @@ export default function ServicePaymentForm({
   return (
     <>
       <div className="w-full max-w-[450px] rounded-[22px] border border-[#d9edf2] bg-white p-5 shadow-[0_16px_38px_rgba(12,61,76,0.12)] sm:p-7 lg:p-8">
-        <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#026381]">
-          SaveDost Payments
-        </p>
+        <div className="flex items-center justify-between gap-3">
+          <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#026381]">
+            SaveDost Payments
+          </p>
+          <Image
+            src="/image/bharat-logo.webp"
+            alt="Bharat Connect"
+            width={1280}
+            height={512}
+            className="h-auto w-20 shrink-0 object-contain sm:w-24"
+          />
+        </div>
         <h1 className="mt-2 text-xl font-extrabold tracking-tight text-[#0C3D4C]">{title}</h1>
 
         {modes && (
