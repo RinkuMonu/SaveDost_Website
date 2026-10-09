@@ -1,0 +1,222 @@
+{
+  "document": {
+    "title": "SaveDost Legal & Customer Policies",
+    "brand": "SaveDost",
+    "company": "FINUNIQUE SMALL PRIVATE LIMITED",
+    "domain": "savedost.com",
+    "email": "help@savedost.com",
+    "phone": "8503886688",
+    "effective_date": "07 October 2026",
+    "last_updated": "07 October 2026"
+  },
+  "contents": [
+    "Privacy Policy",
+    "Terms & Conditions",
+    "Refund & Cancellation Policy",
+    "Grievance Redressal Policy",
+    "Contact Us",
+    "Important Legal / Regulatory Note"
+  ],
+  "policies": {
+    "privacy_policy": {
+      "title": "Privacy Policy",
+      "sections": {
+        "introduction": "Welcome to SaveDost. SaveDost is a digital services platform powered by FINUNIQUE SMALL PRIVATE LIMITED.",
+        "services_covered": [
+          "BBPS and bill-payment services",
+          "Insurance services",
+          "Loan assistance and loan application facilitation",
+          "Branded gift cards",
+          "Add Money / wallet-related services",
+          "Flight, bus, train and hotel booking services",
+          "Gold and silver-related products/services",
+          "SIP and fixed-deposit related services",
+          "Credit-card application facilitation",
+          "Other digital and financial services introduced from time to time"
+        ],
+        "information_we_collect": [
+          "Full name, mobile number, email address, date of birth and address",
+          "PAN and KYC information",
+          "Transaction IDs, payment status and transaction amounts",
+          "Recharge, bill-payment, booking and wallet/add-money information",
+          "Bank-account-related, UPI and payment information where required",
+          "Loan, insurance, investment/savings and credit-card application information where required"
+        ],
+        "kyc_information": "Certain services may require KYC verification. Depending on the applicable service and regulatory requirements, KYC may include PAN, government-issued identity documents, address information, date of birth, photograph and other verification information.",
+        "device_and_technical_information": [
+          "IP address",
+          "Device type and operating system",
+          "Browser information and application version",
+          "Device identifiers",
+          "Login information",
+          "Date and time of access",
+          "Crash, performance and security information"
+        ],
+        "use_of_information": [
+          "Create and manage your account",
+          "Provide requested services and process transactions",
+          "Complete KYC and verification",
+          "Process BBPS, insurance, loan, gift-card and travel services",
+          "Facilitate investment/savings and credit-card applications",
+          "Provide customer support",
+          "Prevent fraud and maintain platform security",
+          "Improve services and comply with applicable laws and regulations"
+        ],
+        "bbps_services": "For BBPS transactions, relevant information may be shared with appropriate BBPS participants, billers, banks, payment providers and other authorized entities where necessary to complete the transaction.",
+        "insurance_services": "SaveDost may facilitate car, bike, health, life and other insurance products.",
+        "loan_services": "SaveDost may facilitate instant loans, personal loans, home loans, business loans and other loan products. The final decision regarding approval, interest rate, loan amount, tenure and charges rests with the relevant lender. SaveDost does not guarantee loan approval.",
+        "gift_cards": "SaveDost may facilitate branded gift cards.",
+        "add_money_wallet": "SaveDost may provide Add Money or wallet-related functionality through applicable service-provider arrangements. SaveDost does not claim to be an RBI-authorized wallet/PPI issuer unless specifically stated otherwise.",
+        "travel_services": "SaveDost may facilitate flight, bus, train-related and hotel bookings.",
+        "invest_and_grow_services": "SaveDost may facilitate access to gold, silver, SIP-related services, fixed deposits and other savings/investment products through third-party providers. SaveDost does not guarantee investment returns.",
+        "credit_card_applications": "SaveDost may facilitate applications for credit cards issued by banks or financial institutions.",
+        "sharing_of_information": [
+          "Banks and payment service providers",
+          "BBPS participants",
+          "Insurance companies and intermediaries",
+          "Banks/NBFCs and lending partners",
+          "Gift-card and travel providers",
+          "Investment/savings providers and credit-card issuers",
+          "KYC/verification, technology, cloud and customer-support providers",
+          "Government/regulatory authorities where legally required"
+        ],
+        "data_security": "We use reasonable technical and organizational measures to protect personal information against unauthorized access, misuse, alteration, disclosure, loss or destruction. However, no internet-based system can be guaranteed to be completely secure.",
+        "data_retention": "We may retain information as reasonably necessary for providing services, transaction records, customer support, fraud prevention, dispute resolution, audit, legal and regulatory requirements.",
+        "privacy_rights": "Subject to applicable law, users may have rights relating to access, correction, updating, deletion where legally applicable, withdrawal of consent where applicable and privacy-related grievance redressal.",
+        "marketing_communications": "We may send promotional communications where permitted by law. Users may opt out where an applicable opt-out mechanism is provided.",
+        "childrens_privacy": "SaveDost's financial and other services may have age and eligibility requirements imposed by applicable law or the relevant service provider.",
+        "third_party_links": "SaveDost may contain links to third-party websites or applications. Third-party services operate under their own terms and privacy policies.",
+        "changes_to_privacy_policy": "We may update this Privacy Policy from time to time."
+      }
+    },
+    "terms_and_conditions": {
+      "title": "Terms & Conditions",
+      "sections": {
+        "about_savedost": "SaveDost is a digital platform powered by FINUNIQUE SMALL PRIVATE LIMITED. Depending on the service, SaveDost may act as a technology platform, facilitator, intermediary or service provider.",
+        "acceptance": "By accessing or using SaveDost, you agree to these Terms and Conditions, Privacy Policy and applicable service-specific terms.",
+        "eligibility": "Users must satisfy applicable legal and service-specific eligibility requirements.",
+        "account_registration": "Users must provide accurate and updated information and must not create accounts using false information, impersonate others, use another person's account, provide false KYC information or attempt unauthorized transactions.",
+        "payments": "Payments may be processed through third-party payment gateways, banks or payment service providers. Transactions may be successful, failed, pending, reversed or refunded depending on the applicable provider.",
+        "bbps": "BBPS services are subject to applicable BBPS rules and biller terms.",
+        "insurance": "Insurance products may be provided through insurers or authorized intermediaries. SaveDost does not guarantee policy issuance, premium, claim approval or claim settlement.",
+        "loans": "SaveDost may facilitate loan applications with banks, NBFCs or other lending partners. SaveDost does not guarantee approval, loan amount, interest rate, tenure, credit limit or disbursement.",
+        "gift_cards": "Gift cards are subject to issuer terms. Cancellation or refund may be restricted after successful issuance/delivery.",
+        "add_money_wallet": "Add Money/wallet functionality is subject to applicable service-provider and regulatory requirements.",
+        "travel": "Travel bookings are subject to the terms and cancellation rules of the relevant provider.",
+        "invest_and_grow": "Investment and savings-related services may be offered through third-party providers and may involve risk.",
+        "credit_cards": "Credit-card applications are subject to the eligibility and approval criteria of the issuing bank/financial institution.",
+        "user_responsibilities": [
+          "Provide correct information",
+          "Keep credentials secure",
+          "Do not share OTPs",
+          "Do not misuse the platform",
+          "Do not conduct fraudulent transactions",
+          "Do not attempt unauthorized access",
+          "Comply with applicable laws"
+        ],
+        "prohibited_activities": [
+          "Fraud",
+          "Money laundering",
+          "Identity theft",
+          "Unauthorized transactions",
+          "False KYC",
+          "Unauthorized access",
+          "Transaction manipulation",
+          "Any unlawful activity"
+        ],
+        "service_availability": "We aim to provide continuous service but do not guarantee uninterrupted availability.",
+        "intellectual_property": "SaveDost name, logo, design, software, graphics, content and other proprietary materials belong to FINUNIQUE SMALL PRIVATE LIMITED or their licensors.",
+        "limitation_of_liability": "To the extent permitted by applicable law, SaveDost shall not be liable for losses caused solely by third-party service failure, bank/payment gateway failure, incorrect user information, network interruption or events beyond reasonable control.",
+        "suspension_and_termination": "We may suspend, restrict or terminate access where reasonably necessary because of fraud, security concerns, violation of these Terms, legal requirements, regulatory requirements or misuse.",
+        "governing_law": "These Terms shall be governed by the laws of India."
+      }
+    },
+    "refund_and_cancellation_policy": {
+      "title": "Refund & Cancellation Policy",
+      "sections": {
+        "introduction": "This Refund & Cancellation Policy explains rules applicable to payments, cancellations and refunds made through SaveDost.",
+        "general_refund_principle": "Refund eligibility depends on service type, transaction status, provider rules, cancellation conditions, applicable law, payment-provider rules and whether the service has been consumed or fulfilled.",
+        "bbps_bill_payment": "Successful bill payments may not be cancellable once processed. If money is debited but the transaction fails or remains unresolved, reversal/refund may occur according to the applicable BBPS/payment settlement process.",
+        "recharge": "Successful recharges are generally non-cancellable once processed. Failed recharges after debit may be reversed/refunded according to the applicable provider process.",
+        "gift_cards": "Gift cards are generally non-refundable after successful issuance, activation or delivery, subject to issuer terms and applicable law.",
+        "insurance": "Insurance premium payments and policy cancellations are governed by the relevant insurer and applicable insurance regulations.",
+        "loan_applications": "Submitting a loan application does not guarantee approval. Loan cancellation, cooling-off or refund matters relating to the loan are governed by the relevant lender's terms and applicable requirements.",
+        "add_money_wallet": "Failed Add Money transactions after successful debit may be reversed/refunded according to the applicable payment provider's process.",
+        "travel_bookings": "Flight, bus, train-related and hotel cancellations/refunds are subject to the applicable provider's fare, booking and cancellation rules.",
+        "gold_silver_investment_sip_fd": "Cancellation or redemption is subject to the terms of the relevant provider and applicable regulatory framework.",
+        "credit_card_applications": "Credit-card applications generally do not guarantee issuance. Any fee and refund conditions, if applicable, will be disclosed before payment.",
+        "duplicate_transactions": "For suspected duplicate charges, contact support with the registered mobile number, transaction ID, date, amount and supporting evidence.",
+        "unauthorized_transactions": "Contact SaveDost immediately for suspected unauthorized transactions and also contact your bank/payment provider where appropriate.",
+        "refund_processing": "Approved refunds may be returned through the original payment method, bank account, UPI, payment gateway or another legally permissible method.",
+        "refund_request": "Contact help@savedost.com or 8503886688 and provide your name, registered mobile number, transaction ID, date, amount, service, reason and supporting documents/screenshots where applicable.",
+        "non_refundable_transactions": "Subject to applicable law and provider rules, successfully processed bill payments, recharges, issued gift cards and completed/consumed digital services may generally be non-refundable.",
+        "third_party_refunds": "Where a transaction is fulfilled by a third-party provider, refund processing may be controlled by that provider.",
+        "chargebacks": "Users should contact SaveDost before initiating a payment dispute where appropriate. Fraudulent or unauthorized transactions will be investigated."
+      }
+    },
+    "grievance_redressal_policy": {
+      "title": "Grievance Redressal Policy",
+      "sections": {
+        "purpose": "SaveDost provides a transparent mechanism for complaints concerning payments, BBPS, recharge, insurance, loans, gift cards, Add Money/wallet, travel, investment/savings-related services, credit-card applications, accounts, privacy, technical issues and unauthorized transactions.",
+        "how_to_raise_complaint": "Email: help@savedost.com • Phone: 8503886688. Provide your name, registered mobile number, transaction/reference number, date, service, complaint description and supporting documents where available.",
+        "complaint_acknowledgement": "We aim to acknowledge complaints within a reasonable period. Resolution time may vary depending on complaint complexity and whether a third-party provider is involved.",
+        "transaction_complaints": "We may investigate with payment gateways, banks, BBPS participants, billers, insurers, lenders, travel providers, gift-card issuers or other relevant service providers.",
+        "loan_related_complaints": "For loans facilitated through a bank/NBFC or other regulated lender, the relevant lender/regulated entity remains responsible for its applicable grievance mechanism.",
+        "privacy_complaints": "Privacy and personal-data complaints can be submitted to help@savedost.com.",
+        "escalation": "If a complaint is not satisfactorily resolved through initial support, customers may request escalation by replying to the complaint communication or contacting help@savedost.com / 8503886688.",
+        "regulatory_statutory_remedies": "Nothing in this policy limits any statutory or regulatory remedy available under Indian law.",
+        "fraud_unauthorized_transaction": "Contact SaveDost immediately, contact your bank/payment provider where appropriate, provide transaction details and cooperate with verification.",
+        "false_or_malicious_complaints": "Customers are expected to provide accurate information. Knowingly submitting false information, fraudulent claims or fabricated documents may result in appropriate action subject to law."
+      }
+    }
+  },
+  "contact_us": {
+    "company": "FINUNIQUE SMALL PRIVATE LIMITED",
+    "brand": "SaveDost",
+    "website": "savedost.com",
+    "customer_support_email": "help@savedost.com",
+    "customer_support_phone": "8503886688",
+    "services": [
+      "BBPS / Bill Payment",
+      "Recharge",
+      "Payment Issues",
+      "Failed Transactions",
+      "Refund Requests",
+      "Insurance",
+      "Loan Applications",
+      "Gift Cards",
+      "Add Money / Wallet",
+      "Flight, Bus, Train and Hotel Booking",
+      "Gold & Silver Services",
+      "SIP / FD Services",
+      "Credit Card Applications",
+      "Account Issues",
+      "Privacy Requests",
+      "Grievances",
+      "Unauthorized Transactions",
+      "Technical Support"
+    ],
+    "support_request_details": [
+      "Transaction ID/Reference Number",
+      "Registered mobile number",
+      "Transaction date",
+      "Amount",
+      "Service name",
+      "Description of the issue"
+    ]
+  },
+  "legal_regulatory_note": [
+    "This document is a comprehensive business-policy draft and is not a substitute for legal advice.",
+    "Before publishing, FINUNIQUE SMALL PRIVATE LIMITED should verify the exact role of SaveDost in every service.",
+    "RBI requirements may apply differently depending on whether the Company or a partner is the regulated entity, lender, payment provider or PPI issuer.",
+    "For loan services, insert the exact name and grievance/contact details of each relevant bank/NBFC/regulated entity where required.",
+    "For insurance, investment, wallet/payment and credit-card services, publish the relevant partner/provider disclosures and links where required.",
+    "The Privacy Policy should match the Company's real data collection, storage, sharing, retention, consent and deletion practices.",
+    "The final published version should be reviewed by qualified Indian legal/compliance counsel before going live."
+  ],
+  "source": {
+    "filename": "SaveDost_Legal_Policies.pdf",
+    "pages": 15,
+    "conversion_note": "Structured from the text extracted from the uploaded PDF; wording is preserved in substance."
+  }
+}

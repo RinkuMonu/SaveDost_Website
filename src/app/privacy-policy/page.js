@@ -11,7 +11,7 @@ import {
   User,
   Cookie,
   Link,
-  Child,
+  Baby,
   Phone,
   RefreshCw,
   FileText,
@@ -25,150 +25,29 @@ const InfoIcon = ({ className = "w-5 h-5" }) => (
   </svg>
 );
 
+import saveDostData from "../../../save_dost.json";
+
 // ==== PRIVACY SECTIONS WITH SVG ICONS ====
 
-const privacySections = [
-  {
-    id: "introduction",
-    icon: <Shield />,
-    title: "Introduction",
-    content: [
-      "SaveDost is a consumer-facing brand powered and operated by Finunique Small Private Limited (“Company”, “we”, “our”, or “us”). The Company values the privacy of its users and is fully committed to safeguarding personal data. This Privacy Policy outlines how we collect, use, store, and protect your information when you access or use SaveDost services, including but not limited to Bharat Bill Payment System (BBPS), Mobile/DTH Recharges, Utility Bill Payments, and other financial technology solutions offered by us.",
-      "Our goal is to ensure that your personal and financial information is handled responsibly, securely, and in compliance with applicable laws and regulatory guidelines, including those prescribed by the Reserve Bank of India (RBI), National Payments Corporation of India (NPCI), and Unique Identification Authority of India (UIDAI).",
-      "By using our services, you consent to the collection and use of your information in accordance with this Privacy Policy. We only gather information that is essential to provide seamless transactions, meet compliance obligations, and enhance user experience. We do not sell or rent your personal data to unauthorized third parties.",
-      "We encourage all users to read this policy carefully to understand how we handle your information and to exercise your rights effectively.",
-    ],
-  },
-  {
-    id: "information-we-collect",
-    icon: <Database />,
-    title: "Information We Collect",
-    content: [
-      "At Finunique Small Private Limited, we are committed to collecting only such information that is necessary for providing our financial and utility services in a safe, secure, and legally compliant manner. The categories of information we may collect include:",
-      "Personal Information — such as your full name, contact details, Aadhaar, PAN, and KYC-related data.",
-      "Financial Information — including bank details, UPI IDs, wallet data, and transaction history.",
-      "Technical Information — like IP address, device details, and usage logs.",
-      "Service-Related Information — including transaction IDs, logs, and bill payment records.",
-      "Disclaimer: All information collected is used only for lawful, service-related, and regulatory purposes.",
-    ],
-  },
-  {
-    id: "how-we-use-your-information",
-    icon: <Shield />,
-    title: "How We Use Your Information",
-    content: [
-      "Your information is used solely to deliver secure and compliant services.",
-      "Processing Transactions — For BBPS, and other payments.",
-      "Identity Verification — For KYC and AML compliance under RBI/NPCI/UIDAI.",
-      "Security & Fraud Prevention — To detect and prevent unauthorized access.",
-      "Customer Support — For grievance handling and dispute resolution.",
-      "Notifications — To send alerts, updates, and confirmations.",
-      "Service Improvement — To enhance reliability and user experience.",
-      "Disclaimer: Your data is never sold or misused beyond the purposes stated herein.",
-    ],
-  },
-  {
-    id: "data-sharing",
-    icon: <UserCheck />,
-    title: "Data Sharing and Disclosure",
-    content: [
-      "We do not sell or rent user data. However, your data may be shared:",
-      "With Regulators — RBI, NPCI, UIDAI, and other authorities for compliance.",
-      "With Service Providers — Banks, payment gateways, and telecom partners for processing transactions.",
-      "For Legal Obligations — When required by law or court orders.",
-      "During Business Transfers — In mergers or acquisitions, under this same policy.",
-      "Disclaimer: We ensure that any third party receiving data maintains equivalent protection standards.",
-    ],
-  },
-  {
-    id: "data-security",
-    icon: <Share2 />,
-    title: "Data Security",
-    content: [
-      "We prioritize the confidentiality and integrity of all user information.",
-      "Encryption — All sensitive data is encrypted and transmitted securely.",
-      "Access Controls — Only authorized personnel can access data.",
-      "Fraud Monitoring — Continuous surveillance for suspicious activities.",
-      "Infrastructure Protection — Firewalls, intrusion detection, and audits.",
-      "Data Minimization — We retain only what’s necessary for compliance.",
-      "User Responsibility — Users must safeguard login and OTP credentials.",
-      "Disclaimer: Despite all measures, no system is 100% secure; usage implies consent.",
-    ],
-  },
-  {
-    id: "data-retention",
-    icon: <Lock />,
-    title: "Data Retention",
-    content: [
-      "We retain data only as long as required for business or legal reasons.",
-      "Legal Compliance — RBI, NPCI, and UIDAI mandate certain retention periods.",
-      "Support — Retained for grievance resolution and dispute handling.",
-      "Security Logs — Stored for fraud monitoring and compliance.",
-      "Data Minimization — Deleted or anonymized once no longer required.",
-      "User Rights — Deletion requests are honored unless restricted by law.",
-      "Disclaimer: Retention is governed by Indian regulations and may override user requests.",
-    ],
-  },
-  {
-    id: "user-rights",
-    icon: <Clock />,
-    title: "Your Rights",
-    content: [
-      "You have the right to:",
-      "Access — View personal and financial data we hold about you.",
-      "Correct — Request updates to inaccurate or outdated information.",
-      "Delete — Request deletion of personal data (subject to legal limits).",
-      "Opt-Out — Restrict non-essential communications.",
-      "Raise Concerns — Contact our Grievance Officer for any issues.",
-      "Disclaimer: Some rights may be limited under Indian financial laws.",
-    ],
-  },
-  {
-    id: "cookies",
-    icon: <User />,
-    title: "Cookies and Tracking",
-    content: [
-      "We use cookies and similar technologies to improve service functionality and security.",
-      "Purpose — To enhance navigation, analytics, personalization, and fraud detection.",
-      "Types — Essential, performance, functional, and analytical cookies.",
-      "Control — Users may block cookies, though it may limit platform functionality.",
-      "Disclaimer: By continuing to use our platform, you consent to our cookie usage.",
-    ],
-  },
-  {
-    id: "third-party-links",
-    icon: <Lock />,
-    title: "Third-Party Links",
-    content:
-      "Our services may contain links to third-party websites or payment gateways. We are not responsible for their privacy practices. Please review their respective policies before sharing data. Interaction with third-party platforms is at your own discretion.",
-  },
-  {
-    id: "childrens-privacy",
-    icon: <Clock />,
-    title: "Children’s Privacy",
-    content:
-      "Our services are intended only for users aged 18 and above. We do not knowingly collect data from minors. Parents or guardians may contact us to have such information removed.",
-  },
-  {
-    id: "grievance-officer",
-    icon: <User />,
-    title: "Grievance Officer",
-    content: [
-      "In compliance with Indian law, we have appointed a Grievance Officer to address privacy-related concerns.",
-      "Grievance Officer",
-      "Finunique Small Private Limited",
-      "Email: support@savedost.com",
-      "All complaints will be acknowledged and resolved promptly.",
-    ],
-  },
-  {
-    id: "policy-updates",
-    icon: <Link />,
-    title: "Policy Updates",
-    content:
-      "This Privacy Policy may be updated periodically to reflect changes in laws or technology. The latest version will always be available on our website with the effective date. Continued use of our services indicates acceptance of the revised policy.",
-  },
-];
+const getIcon = (key) => {
+  if (key.includes('security') || key.includes('privacy')) return <Shield />;
+  if (key.includes('information') || key.includes('data') || key.includes('kyc')) return <Database />;
+  if (key.includes('services') || key.includes('bbps') || key.includes('insurance') || key.includes('loan') || key.includes('travel') || key.includes('invest') || key.includes('credit_card') || key.includes('gift_cards') || key.includes('wallet')) return <RefreshCw />;
+  if (key.includes('rights') || key.includes('communications')) return <UserCheck />;
+  if (key.includes('sharing') || key.includes('third_party')) return <Share2 />;
+  if (key.includes('children')) return <Baby />;
+  if (key.includes('changes')) return <Clock />;
+  return <FileText />;
+};
+
+const formatTitle = (key) => key.split('_').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+
+const privacySections = Object.entries(saveDostData.policies.privacy_policy.sections).map(([key, value]) => ({
+  id: key.replace(/_/g, '-'),
+  icon: getIcon(key),
+  title: formatTitle(key),
+  content: Array.isArray(value) ? value : [value]
+}));
 
 export default function Privacy() {
   const [activeSection, setActiveSection] = useState("introduction");
